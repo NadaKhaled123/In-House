@@ -2,7 +2,7 @@ from . import __version__ as app_version
 
 app_name = "wo_workflow"
 app_title = "Wo Workflow"
-app_publisher = "Nada"
+app_publisher = "nada"
 app_description = "Wo Workflow"
 app_email = "nada@gmail.com"
 app_license = "MIT"

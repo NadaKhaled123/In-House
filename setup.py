@@ -10,7 +10,7 @@ setup(
 	name="wo_workflow",
 	version=version,
 	description="Wo Workflow",
-	author="Nada",
+	author="nada",
 	author_email="nada@gmail.com",
 	packages=find_packages(),
 	zip_safe=False,
