@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include wo_workflow *.css
+recursive-include wo_workflow *.csv
+recursive-include wo_workflow *.html
+recursive-include wo_workflow *.ico
+recursive-include wo_workflow *.js
+recursive-include wo_workflow *.json
+recursive-include wo_workflow *.md
+recursive-include wo_workflow *.png
+recursive-include wo_workflow *.py
+recursive-include wo_workflow *.svg
+recursive-include wo_workflow *.txt
+recursive-exclude wo_workflow *.pyc
