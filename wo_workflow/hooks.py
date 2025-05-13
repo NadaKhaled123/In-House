@@ -10,9 +10,25 @@ app_license = "MIT"
 # Includes in <head>
 # ------------------
 
+override_doctype_class = {
+    "Work Order": "wo_workflow.overrides.work_order.CustomWorkOrder",
+    "Stock Entry" : "wo_workflow.overrides.stock_entry.CustomStockEntry",
+    "Quality Inspection" : "wo_workflow.overrides.quality_inspection.CustomQualityInspection" ,
+    "Delivery Note" :  "wo_workflow.overrides.delivery_note.CustomDeliveryNote"
+}
+fixtures = [
+    {
+        "doctype": "Property Setter",
+        "filters": [
+            ["name", "in", [
+                "Work Order-status-options",
+            ]]
+        ]
+    }
+]
 # include js, css files in header of desk.html
 # app_include_css = "/assets/wo_workflow/css/wo_workflow.css"
-# app_include_js = "/assets/wo_workflow/js/wo_workflow.js"
+app_include_js = "/assets/wo_workflow/js/work_order_list.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/wo_workflow/css/wo_workflow.css"
@@ -30,7 +46,7 @@ app_license = "MIT"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+doctype_list_js = {"Work Order" : "public/js/work_order_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
